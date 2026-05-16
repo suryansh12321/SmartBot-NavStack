@@ -1,6 +1,8 @@
 {
-  "kitchen": [8, 8],
-  "bedroom": [2, 2],
-  "living room": [5, 1],
-  "charging dock": [0, 0]
+    "metadata": {
+        "width": 10,
+        "height": 10
+    },
+    "targets": {},
+    "obstacles": {}
 }

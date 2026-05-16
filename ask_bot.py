@@ -3,6 +3,8 @@ import subprocess
 import sys
 import speech_recognition as sr  # The new audio library
 
+sys.stdout.reconfigure(encoding='utf-8')
+
 def load_locations():
     try:
         with open('locations.json', 'r') as file:
