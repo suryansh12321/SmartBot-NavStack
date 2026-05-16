@@ -75,3 +75,19 @@ Execute via Voice: Open the Telemetry Link tab in the main OS. Click Initiate Vo
 🔧 Hardware Transition Roadmap
 While currently operating as a high-fidelity desktop simulation, this codebase is designed to be pushed to a physical chassis (e.g., Raspberry Pi 4).
 Launch the Hardware Bridge Configurator from the main dashboard to automatically generate the specific C-code required to interface this mathematical engine with physical I2C ToF (VL53L0X) sensors and PWM Motor Drivers.
+
+How to Use It on the Robot(deploy_navcore.sh file)
+
+
+
+When you actually copy this folder via USB or SSH into your robot's onboard computer (like a Raspberry Pi), it won't be able to run the script immediately for security reasons. You have to grant it execution rights.
+
+Here is what you will type into the robot's terminal:
+
+Make it executable:
+chmod +x deploy_navcore.sh
+
+Run the deployment:
+./deploy_navcore.sh
+
+The moment you hit enter, the terminal will light up with the giant NAVCORE ASCII logo, quietly configure the Linux environment, and compile the C engine perfectly for the robot's specific processor.
